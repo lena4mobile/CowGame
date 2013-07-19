@@ -10,4 +10,9 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+
+-(IBAction)onCowClick:(id)sender;
+
 @end
