@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F875ABD179858BD00827786 /* CowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F875ABC179858BD00827786 /* CowController.m */; };
 		3FDC392E17983CF400638467 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC392D17983CF400638467 /* UIKit.framework */; };
 		3FDC393017983CF400638467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC392F17983CF400638467 /* Foundation.framework */; };
 		3FDC393217983CF400638467 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FDC393117983CF400638467 /* CoreGraphics.framework */; };
@@ -18,10 +19,28 @@
 		3FDC394417983CF400638467 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC394317983CF400638467 /* Default-568h@2x.png */; };
 		3FDC394717983CF400638467 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FDC394617983CF400638467 /* ViewController.m */; };
 		3FDC394A17983CF400638467 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC394817983CF400638467 /* ViewController_iPhone.xib */; };
-		3FDC394D17983CF400638467 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC394B17983CF400638467 /* ViewController_iPad.xib */; };
+		3FDC395D17983D5600638467 /* cow-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395417983D5600638467 /* cow-1.png */; };
+		3FDC395E17983D5600638467 /* cow-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395517983D5600638467 /* cow-2.png */; };
+		3FDC395F17983D5600638467 /* cow-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395617983D5600638467 /* cow-3.png */; };
+		3FDC396017983D5600638467 /* cow-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395717983D5600638467 /* cow-4.png */; };
+		3FDC396117983D5600638467 /* cow-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395817983D5600638467 /* cow-5.png */; };
+		3FDC396217983D5600638467 /* cow-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395917983D5600638467 /* cow-6.png */; };
+		3FDC396417983D5600638467 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FDC395B17983D5600638467 /* icon.png */; };
+		3FF77478179864700004CF1C /* CowSoundController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF77477179864700004CF1C /* CowSoundController.m */; };
+		3FF7747B179864BA0004CF1C /* CowBackdropController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF7747A179864BA0004CF1C /* CowBackdropController.m */; };
+		3FF7747D179866170004CF1C /* backdrop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7747C179866170004CF1C /* backdrop.png */; };
+		3FF7747F17986A830004CF1C /* audio-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7747E17986A830004CF1C /* audio-1.wav */; };
+		3FF7748517986AFF0004CF1C /* audio-2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7748017986AFF0004CF1C /* audio-2.wav */; };
+		3FF7748617986AFF0004CF1C /* audio-3.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7748117986AFF0004CF1C /* audio-3.wav */; };
+		3FF7748717986AFF0004CF1C /* cow-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7748217986AFF0004CF1C /* cow-0.png */; };
+		3FF7748817986AFF0004CF1C /* cow-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7748317986AFF0004CF1C /* cow-7.png */; };
+		3FF7748917986AFF0004CF1C /* cow-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FF7748417986AFF0004CF1C /* cow-8.png */; };
+		BF548DC81798D25F00E71EC9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF548DC71798D25F00E71EC9 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F875ABB1798587500827786 /* CowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowController.h; sourceTree = "<group>"; };
+		3F875ABC179858BD00827786 /* CowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowController.m; sourceTree = "<group>"; };
 		3FDC392A17983CF400638467 /* CowGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CowGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDC392D17983CF400638467 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FDC392F17983CF400638467 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -38,7 +57,25 @@
 		3FDC394517983CF400638467 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3FDC394617983CF400638467 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3FDC394917983CF400638467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		3FDC394C17983CF400638467 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		3FDC395417983D5600638467 /* cow-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-1.png"; sourceTree = "<group>"; };
+		3FDC395517983D5600638467 /* cow-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-2.png"; sourceTree = "<group>"; };
+		3FDC395617983D5600638467 /* cow-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-3.png"; sourceTree = "<group>"; };
+		3FDC395717983D5600638467 /* cow-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-4.png"; sourceTree = "<group>"; };
+		3FDC395817983D5600638467 /* cow-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-5.png"; sourceTree = "<group>"; };
+		3FDC395917983D5600638467 /* cow-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-6.png"; sourceTree = "<group>"; };
+		3FDC395B17983D5600638467 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3FF77476179864700004CF1C /* CowSoundController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowSoundController.h; sourceTree = "<group>"; };
+		3FF77477179864700004CF1C /* CowSoundController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowSoundController.m; sourceTree = "<group>"; };
+		3FF77479179864BA0004CF1C /* CowBackdropController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CowBackdropController.h; sourceTree = "<group>"; };
+		3FF7747A179864BA0004CF1C /* CowBackdropController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CowBackdropController.m; sourceTree = "<group>"; };
+		3FF7747C179866170004CF1C /* backdrop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backdrop.png; sourceTree = "<group>"; };
+		3FF7747E17986A830004CF1C /* audio-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio-1.wav"; sourceTree = "<group>"; };
+		3FF7748017986AFF0004CF1C /* audio-2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio-2.wav"; sourceTree = "<group>"; };
+		3FF7748117986AFF0004CF1C /* audio-3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "audio-3.wav"; sourceTree = "<group>"; };
+		3FF7748217986AFF0004CF1C /* cow-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-0.png"; sourceTree = "<group>"; };
+		3FF7748317986AFF0004CF1C /* cow-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-7.png"; sourceTree = "<group>"; };
+		3FF7748417986AFF0004CF1C /* cow-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cow-8.png"; sourceTree = "<group>"; };
+		BF548DC71798D25F00E71EC9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF548DC81798D25F00E71EC9 /* AVFoundation.framework in Frameworks */,
 				3FDC392E17983CF400638467 /* UIKit.framework in Frameworks */,
 				3FDC393017983CF400638467 /* Foundation.framework in Frameworks */,
 				3FDC393217983CF400638467 /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +96,7 @@
 		3FDC392117983CF400638467 = {
 			isa = PBXGroup;
 			children = (
+				BF548DC71798D25F00E71EC9 /* AVFoundation.framework */,
 				3FDC393317983CF400638467 /* CowGame */,
 				3FDC392C17983CF400638467 /* Frameworks */,
 				3FDC392B17983CF400638467 /* Products */,
@@ -85,12 +124,17 @@
 		3FDC393317983CF400638467 /* CowGame */ = {
 			isa = PBXGroup;
 			children = (
+				3F875ABB1798587500827786 /* CowController.h */,
+				3F875ABC179858BD00827786 /* CowController.m */,
+				3FF77476179864700004CF1C /* CowSoundController.h */,
+				3FF77477179864700004CF1C /* CowSoundController.m */,
+				3FF77479179864BA0004CF1C /* CowBackdropController.h */,
+				3FF7747A179864BA0004CF1C /* CowBackdropController.m */,
 				3FDC393C17983CF400638467 /* AppDelegate.h */,
 				3FDC393D17983CF400638467 /* AppDelegate.m */,
 				3FDC394517983CF400638467 /* ViewController.h */,
 				3FDC394617983CF400638467 /* ViewController.m */,
 				3FDC394817983CF400638467 /* ViewController_iPhone.xib */,
-				3FDC394B17983CF400638467 /* ViewController_iPad.xib */,
 				3FDC393417983CF400638467 /* Supporting Files */,
 			);
 			path = CowGame;
@@ -99,6 +143,7 @@
 		3FDC393417983CF400638467 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FDC395317983D5600638467 /* assets */,
 				3FDC393517983CF400638467 /* CowGame-Info.plist */,
 				3FDC393617983CF400638467 /* InfoPlist.strings */,
 				3FDC393917983CF400638467 /* main.m */,
@@ -108,6 +153,27 @@
 				3FDC394317983CF400638467 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3FDC395317983D5600638467 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				3FF7747E17986A830004CF1C /* audio-1.wav */,
+				3FF7748017986AFF0004CF1C /* audio-2.wav */,
+				3FF7748117986AFF0004CF1C /* audio-3.wav */,
+				3FF7747C179866170004CF1C /* backdrop.png */,
+				3FF7748217986AFF0004CF1C /* cow-0.png */,
+				3FDC395417983D5600638467 /* cow-1.png */,
+				3FDC395517983D5600638467 /* cow-2.png */,
+				3FDC395617983D5600638467 /* cow-3.png */,
+				3FDC395717983D5600638467 /* cow-4.png */,
+				3FDC395817983D5600638467 /* cow-5.png */,
+				3FDC395917983D5600638467 /* cow-6.png */,
+				3FF7748317986AFF0004CF1C /* cow-7.png */,
+				3FF7748417986AFF0004CF1C /* cow-8.png */,
+				3FDC395B17983D5600638467 /* icon.png */,
+			);
+			path = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +232,20 @@
 				3FDC394217983CF400638467 /* Default@2x.png in Resources */,
 				3FDC394417983CF400638467 /* Default-568h@2x.png in Resources */,
 				3FDC394A17983CF400638467 /* ViewController_iPhone.xib in Resources */,
-				3FDC394D17983CF400638467 /* ViewController_iPad.xib in Resources */,
+				3FDC395D17983D5600638467 /* cow-1.png in Resources */,
+				3FDC395E17983D5600638467 /* cow-2.png in Resources */,
+				3FDC395F17983D5600638467 /* cow-3.png in Resources */,
+				3FDC396017983D5600638467 /* cow-4.png in Resources */,
+				3FDC396117983D5600638467 /* cow-5.png in Resources */,
+				3FDC396217983D5600638467 /* cow-6.png in Resources */,
+				3FDC396417983D5600638467 /* icon.png in Resources */,
+				3FF7747D179866170004CF1C /* backdrop.png in Resources */,
+				3FF7747F17986A830004CF1C /* audio-1.wav in Resources */,
+				3FF7748517986AFF0004CF1C /* audio-2.wav in Resources */,
+				3FF7748617986AFF0004CF1C /* audio-3.wav in Resources */,
+				3FF7748717986AFF0004CF1C /* cow-0.png in Resources */,
+				3FF7748817986AFF0004CF1C /* cow-7.png in Resources */,
+				3FF7748917986AFF0004CF1C /* cow-8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +259,9 @@
 				3FDC393A17983CF400638467 /* main.m in Sources */,
 				3FDC393E17983CF400638467 /* AppDelegate.m in Sources */,
 				3FDC394717983CF400638467 /* ViewController.m in Sources */,
+				3F875ABD179858BD00827786 /* CowController.m in Sources */,
+				3FF77478179864700004CF1C /* CowSoundController.m in Sources */,
+				3FF7747B179864BA0004CF1C /* CowBackdropController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,14 +282,6 @@
 				3FDC394917983CF400638467 /* en */,
 			);
 			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		3FDC394B17983CF400638467 /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3FDC394C17983CF400638467 /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +386,7 @@
 				3FDC395217983CF400638467 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

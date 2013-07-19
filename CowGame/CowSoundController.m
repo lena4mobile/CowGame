@@ -7,13 +7,16 @@
 //
 
 #import "CowSoundController.h"
-#import "AudioToolbox/AudioToolbox.h"
-#define SOUND_COUNT 1
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
+#define SOUND_COUNT 3
 
 @implementation CowSoundController{
     int _currentSoundIndex;
     NSMutableArray *_soundArray;
+    AVQueuePlayer *_audioPlayer;
+    bool _isPlaying;
 }
 
 +(id)init{
@@ -24,29 +27,85 @@
     id newInstance = [super init];
     if(newInstance)
     {
-        _soundArray = [[NSMutableArray alloc] initWithCapacity:SOUND_COUNT];
+        _isPlaying = false;
+        
+        _soundArray = [[NSMutableArray alloc]init];
         for (int i=0; i < SOUND_COUNT; i++) {
             NSString *filename = [NSString stringWithFormat: @"audio-%d", i+1];
-            
-            NSString *soundFile = [[NSBundle mainBundle]
-                                   pathForResource:filename ofType:@"wav"];
-            SystemSoundID soundId;
-            AudioServicesCreateSystemSoundID((__bridge CFURLRef)
-                                             [NSURL fileURLWithPath:soundFile], &soundId);
-            [_soundArray addObject:[NSNumber numberWithLong:soundId]];
+            NSURL *path = [[NSBundle mainBundle] URLForResource:filename
+                                                  withExtension:@"wav"];
+            [_soundArray addObject:path];
         }
-        _currentSoundIndex = 0;
+        
+        _audioPlayer = [[AVQueuePlayer alloc] init ];
+        @try {            
+            [[NSNotificationCenter defaultCenter]   addObserver:self
+                                                    selector:@selector(playerItemDidReachEnd:)
+                                                    name:AVPlayerItemDidPlayToEndTimeNotification
+                                                    object:nil];
+            //[[NSNotificationCenter defaultCenter] postNotificationName:AVPlayerItemDidPlayToEndTimeNotification
+              //                                      object:nil];
+        }
+        @catch (NSException *exception) {
+            NSLog(@"CowSoundController: %@", exception);
+        }
+        [self playerItemDidReachEnd:nil];
+
     }
     
     return newInstance;
 }
 
--(void)start{
 
+- ( void ) playerItemDidReachEnd: ( NSNotification * ) notification {
+    if (!_isPlaying){
+        return;
+    }
+    
+    [self addSoundItem];
+    
+}
+
+-(void)addSoundItem{
+    if (_currentSoundIndex == SOUND_COUNT){
+        _currentSoundIndex = 0;
+    }
+    
+    @try {
+        AVPlayerItem *playerItem = [[AVPlayerItem alloc] initWithURL:[_soundArray objectAtIndex:_currentSoundIndex]];
+        [ _audioPlayer insertItem: playerItem afterItem: nil ];
+        playerItem = nil;
+    }
+    @catch (NSException *exception) {
+        NSLog(@"addSoundItem: %@\n", exception);
+    }
+    _currentSoundIndex++;
+}
+
+-(void)start{
+    if (_audioPlayer != nil){
+        _isPlaying = true;
+
+        if ([_audioPlayer currentItem] == nil){
+            [self addSoundItem];
+        }
+        
+        [_audioPlayer play];
+    }
 }
 
 -(void)stop{
+    if (_audioPlayer != nil)
+    {
+        _isPlaying = false;
+        [_audioPlayer pause];
+        
+    }
+}
 
+-(void)dealloc {
+    NSLog(@"Deallocating...");
+    _audioPlayer = nil;
 }
 
 @end

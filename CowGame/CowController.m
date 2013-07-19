@@ -7,6 +7,7 @@
 //
 
 #import "CowController.h"
+#import <Foundation/Foundation.h>
 
 #define IMAGE_COUNT 6
 
@@ -53,6 +54,10 @@
 
 -(void) setDirection: (bool) direction {
     _direction = direction;
+}
+
+-(void)dealloc{
+    _images = nil;
 }
 
 @end

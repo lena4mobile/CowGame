@@ -12,4 +12,5 @@
 -(id) initWithButton : (UIButton*) button;
 -(void) next;
 -(void) setDirection: (bool) direction;
+-(void)dealloc;
 @end

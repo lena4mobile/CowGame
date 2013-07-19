@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface CowSoundController : NSObject
 +(id)init;
 -(void)start;
 -(void)stop;
+-(void)dealloc;
 @end

@@ -10,9 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonLeft;
+@property (weak, nonatomic) IBOutlet UIButton *buttonRight;
+
 -(IBAction)onCowClick:(id)sender;
+-(IBAction)onDirectionClick:(id)sender;
 
 @end

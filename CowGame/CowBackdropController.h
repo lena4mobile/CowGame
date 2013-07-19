@@ -13,5 +13,8 @@
 +(id)initWithScrollView:(UIScrollView*)scrollView;
 -(void)next;
 -(Boolean)getDirection;
+-(void)setDirection:(Boolean)direction;
+-(void)setLoop:(Boolean)loop;
+-(Boolean)getLoop;
 
 @end
